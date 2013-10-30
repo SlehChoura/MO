@@ -14,24 +14,23 @@
     body,td,th {
 	color: #F00;
 }
-    </style>
-	<script>
-<!--
-$('welcomeMsg').live("swipeleft", function(){
-var nextpage = $(this).next('div[data-role="page"]');
-//if (nextpage.length > 0) {
-$.mobile.changePage("test.html", "slide", false, true);
-//}
-});
-$('welcomeMsg').live("swiperight", function(){
-var prevpage = $(this).prev('div[data-role="page"]');
-//if (prevpage.length > 0) {
-$.mobile.changePage("test.html", {transition: "slide",
-reverse: true}, true, true);
-//}
-});
-// -->
+
+<script>
+    // Bind the swiperightHandler callback function to the swipe event on div.box
+ /* $( document ).on( 'swiperight',"#cont1", function() {
+            $.mobile.changePage( "index1.html", { transition: "slide", reverse: true } );
+        } );
+		*/
+		$("#cont1").on( 'swiperight', function() {
+            $.mobile.changePage( "test.html", { transition: "slide", reverse: true } );
+        } );
+		
+		
+ 
+  // Callback function references the event target and adds the 'swiperight' class to it
 </script>
+    </style>
+	
     <script src="jquery-1.10.1.min.js"> </script>
     <script src="jquery-migrate-1.2.1.min.js"> </script>
     <script src="jquery.mobile-1.3.2.js"> </script>
@@ -55,8 +54,24 @@ reverse: true}, true, true);
 
   </head>
   <body>
-    <h1>Hello PhoneGap</h1>
+   
+<div id="detailsPage" data-role="page" data-add-back-btn="true">
+
+			<div data-role="header">
+				<h1>détails médecin </h1>
+			</div>
+
+			<div id="cont1" data-role="content"> 
+			
+			
+<img    src="images/doctor.jpg" alt="Logo Air France" />
+				
+			</div>
+
+		</div>
+  <h1>Hello PhoneGap</h1>
     <p>TESTING CHANGE </p>
     <div id="welcomeMsg"></div>
+	
   </body>
 </html>
