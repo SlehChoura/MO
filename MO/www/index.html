@@ -79,6 +79,10 @@
         } );
 		
 		
+		$("#cont").on( 'swiperight', function() {
+            $.mobile.changePage( "index.html", { transition: "slide", reverse: true } );
+        } );
+		
  
   // Callback function references the event target and adds the 'swiperight' class to it
 </script>
