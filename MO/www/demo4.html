@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    <title>MO</title>
+    <title>PhoneGap WP7</title>
 
     <link rel="stylesheet" href="jquery.mobile-1.3.2.css"/>
 
@@ -43,26 +43,40 @@
 background:#636;
 }
 </style>
-<div id="home1" data-role="page" data-add-back-btn="true">
+<div id="home4" data-role="page" data-add-back-btn="true">
 
 			<div data-role="header">
 				<h1>&nbsp;</h1>
 			</div>
 
-			<div id="demo1" data-role="content"> 
+			<div id="demo4" data-role="content"> 
 			
 		<script type="text/javascript"> 
     $(document).ready(function() { 
-        var imgPosX = 50; 
-        var imgPosY =60; 
+        var imgPosX = 25; 
+        var imgPosY =35; 
         $("img#logo").css({"top": imgPosY+"%", "left": imgPosX+"%"}); 
     }); 
 </script> 
 <img   id="logo" style=" position:absolute"  src="images/logo.jpg"  alt="Logo Air France" width="121" height="97" />
+<div class="rdv">
+<h2 align="center" > Laissez vous faire</h2>
+
+<label class="detail" for="1"  >Le client doit confirmer le paiement afin de reserver son rendez-vous</label>
+</div>
 <style>
+detail
+{
+	color:#FFF
+}
+.rdv
+{
+	margin-top:80%;
+	color:#F69
+}
 .btn1
 {
-	margin-top:120%;
+	margin-top:20%;
 }
 </style>
                 <a class="btn1" id="connexion"   data-role="button" data-mini="true" data-inline="true" data-corners="false">conexion</a>
@@ -86,8 +100,11 @@ background:#636;
             $.mobile.changePage( "index1.html", { transition: "slide", reverse: true } );
         } );
 		*/
-		$("#demo1").on( 'swipeleft', function() {
-            $.mobile.changePage( "demo2.html", { transition: "slide", reverse: true } );
+		$("#demo4").on( 'swipeleft', function() {
+            $.mobile.changePage( "demo5.html", { transition: "slide", reverse: true } );
+        } );
+		$("#demo4").on( 'swiperight', function() {
+            $.mobile.changePage( "demo3.html", { transition: "slide", reverse: true } );
         } );
 		
 		
