@@ -4,10 +4,14 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 
-    <title>PhoneGap WP7</title>
+    <title>MO</title>
 
     <link rel="stylesheet" href="jquery.mobile-1.3.2.css"/>
-
+ <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js">
+  </script>
+  
 
     </style>
 	
@@ -15,20 +19,7 @@
     <script src="jquery-migrate-1.2.1.min.js"> </script>
     <script src="jquery.mobile-1.3.2.js"> </script>
     <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
-    <script type="text/javascript">
-
-      document.addEventListener("deviceready",onDeviceReady,false);
-
-      // once the device ready event fires, you can safely do your thing! -jm
-      function onDeviceReady()
-      {
-      document.getElementById("welcomeMsg").innerHTML += "PhoneGap is ready! version=" + window.device.phonegap;
-      console.log("onDeviceReady. You should see this message in Visual Studio's output window.");
-
-      }
-
-    </script>
-
+   
 
 
 
@@ -59,11 +50,11 @@ background:#636;
     }); 
 </script> 
 <img   id="logo" style=" position:absolute"  src="images/logo.jpg"  alt="Logo Air France" width="121" height="97" />
-<div class="rdv">
+<!--<div class="rdv">
 <h2 align="center" > Ajouter un rendez-vous</h2>
 
 <label class="detail" for="1" >Le client peut choisir la plage horaire de son rendez-vous a partir du calendrier qui affiche la disponibilite des practicians</label>
-</div>
+</div>-->
 <style>
 detail
 {
@@ -76,7 +67,7 @@ detail
 }
 .btn1
 {
-	margin-top:20%;
+	margin-top:80%;
 }
 </style>
                 <a class="btn1" id="connexion"   data-role="button" data-mini="true" data-inline="true" data-corners="false">conexion</a>
@@ -101,9 +92,6 @@ detail
         } );
 		*/
 		$("#demo2").on( 'swipeleft', function() {
-            $.mobile.changePage( "demo3.html", { transition: "slide", reverse: true } );
-        } );
-		$("#demo2").on( 'swiperight', function() {
             $.mobile.changePage( "index.html", { transition: "slide", reverse: true } );
         } );
 		

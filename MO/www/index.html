@@ -7,7 +7,10 @@
     <title>MO</title>
 
     <link rel="stylesheet" href="jquery.mobile-1.3.2.css"/>
-
+ <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+  
 
     </style>
 	
@@ -15,20 +18,7 @@
     <script src="jquery-migrate-1.2.1.min.js"> </script>
     <script src="jquery.mobile-1.3.2.js"> </script>
     <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
-    <script type="text/javascript">
-
-      document.addEventListener("deviceready",onDeviceReady,false);
-
-      // once the device ready event fires, you can safely do your thing! -jm
-      function onDeviceReady()
-      {
-      document.getElementById("welcomeMsg").innerHTML += "PhoneGap is ready! version=" + window.device.phonegap;
-      console.log("onDeviceReady. You should see this message in Visual Studio's output window.");
-
-      }
-
-    </script>
-
+  
 
 
 
@@ -58,7 +48,7 @@ background:#636;
         $("img#logo").css({"top": imgPosY+"%", "left": imgPosX+"%"}); 
     }); 
 </script> 
-<img   id="logo" style=" position:absolute"  src="images/logo.jpg"  alt="Logo Air France" width="121" height="97" />
+<img   id="logo" style=" position:absolute"  src="images/logo.jpg"  alt="Logo Air France" width="128" height="128" />
 <style>
 .btn1
 {
