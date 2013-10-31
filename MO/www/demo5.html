@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" />
@@ -17,8 +17,21 @@
     <script src="jquery-1.10.1.min.js"> </script>
     <script src="jquery-migrate-1.2.1.min.js"> </script>
     <script src="jquery.mobile-1.3.2.js"> </script>
-    <script type="text/javascript" charset="utf-8" src="cordova-2.6.0.js"></script>
-  
+    <script type="text/javascript" charset="utf-8" src="phonegap-1.4.1.js"></script>
+    <script type="text/javascript">
+
+      document.addEventListener("deviceready",onDeviceReady,false);
+
+      // once the device ready event fires, you can safely do your thing! -jm
+      function onDeviceReady()
+      {
+      document.getElementById("welcomeMsg").innerHTML += "PhoneGap is ready! version=" + window.device.phonegap;
+      console.log("onDeviceReady. You should see this message in Visual Studio's output window.");
+
+      }
+
+    </script>
+
 
 
 
@@ -33,26 +46,40 @@
 background:#636;
 }
 </style>
-<div id="home1" data-role="page" data-add-back-btn="true">
+<div id="home5" data-role="page" data-add-back-btn="true">
 
 			<div data-role="header">
 				<h1>&nbsp;</h1>
 			</div>
 
-			<div id="demo1" data-role="content"> 
+			<div id="demo5" data-role="content"> 
 			
 		<script type="text/javascript"> 
     $(document).ready(function() { 
-        var imgPosX = 50; 
-        var imgPosY =60; 
+        var imgPosX = 25; 
+        var imgPosY =35; 
         $("img#logo").css({"top": imgPosY+"%", "left": imgPosX+"%"}); 
     }); 
 </script> 
-<img   id="logo" style=" position:absolute"  src="images/logo.jpg"  alt="Logo Air France" width="128" height="128" />
+<img   id="logo" style=" position:absolute"  src="images/logo.jpg"  alt="Logo Air France" width="121" height="97" />
+<div class="rdv">
+<h2 align="center" > Votre avis nous interesse</h2>
+
+<label class="detail" for="1"  >Le client doit confirmer le paiement afin de reserver son rendez-vous</label>
+</div>
 <style>
+detail
+{
+	color:#FFF
+}
+.rdv
+{
+	margin-top:80%;
+	color:#F69
+}
 .btn1
 {
-	margin-top:120%;
+	margin-top:20%;
 }
 </style>
                 <a class="btn1" id="connexion"   data-role="button" data-mini="true" data-inline="true" data-corners="false">conexion</a>
@@ -76,8 +103,9 @@ background:#636;
             $.mobile.changePage( "index1.html", { transition: "slide", reverse: true } );
         } );
 		*/
-		$("#demo1").on( 'swipeleft', function() {
-            $.mobile.changePage( "demo2.html", { transition: "slide", reverse: true } );
+	
+		$("#demo5").on( 'swiperight', function() {
+            $.mobile.changePage( "demo4.html", { transition: "slide", reverse: true } );
         } );
 		
 		

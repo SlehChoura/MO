@@ -13,9 +13,12 @@
 /* Swatches */
 /* A
 -----------------------------------------------------------------------------------------------------------*/
+.ui-page { 
+background:#636;
+}
 .ui-bar-a {
 	border: 1px solid 		#333 /*{a-bar-border}*/;
-	background: 			#111 /*{a-bar-background-color}*/;
+	background: 			#636 /*{a-bar-background-color}*/;
 	color: 					#fff /*{a-bar-color}*/;
 	font-weight: bold;
 	text-shadow: 0 /*{a-bar-shadow-x}*/ -1px /*{a-bar-shadow-y}*/ 0 /*{a-bar-shadow-radius}*/ #000 /*{a-bar-shadow-color}*/;
@@ -330,7 +333,8 @@
 	border: 1px solid 		#aaa /*{c-body-border}*/;
 	color: 					#333 /*{c-body-color}*/;
 	text-shadow: 0 /*{c-body-shadow-x}*/ 1px /*{c-body-shadow-y}*/ 0 /*{c-body-shadow-radius}*/ #fff /*{c-body-shadow-color}*/;
-	background: 			#f9f9f9 /*{c-body-background-color}*/;
+	background: 			#636
+	 /*{c-body-background-color}*/;
 	background-image: -webkit-gradient(linear, left top, left bottom, from( #f9f9f9 /*{c-body-background-start}*/), to( #eee /*{c-body-background-end}*/)); /* Saf4+, Chrome */
 	background-image: -webkit-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eee /*{c-body-background-end}*/); /* Chrome 10+, Saf5.1+ */
 	background-image:    -moz-linear-gradient( #f9f9f9 /*{c-body-background-start}*/, #eee /*{c-body-background-end}*/); /* FF3.6 */
@@ -3368,3 +3372,4 @@ div.ui-slider-switch.ui-mini {
 		display: none;
 	}	
 }
+body {background-color:#636;}
