@@ -51,20 +51,21 @@
   </style>
 </head>
 <body>
-<div id="detailsPage" data-role="page" data-add-back-btn="true">
+<div id="details" data-role="page" data-add-back-btn="true">
 
 			<div data-role="header">
 				<h1>détails médecin </h1>
 			</div>
 
-			<div id="cont1" data-role="content"> 
+			<div id="cont" data-role="content"> 
 			
 			
-<img    src="images/logo.jpg" alt="Logo Air France" />
+
 				
 			</div>
 
 		</div>
+ 
  
  
  
@@ -74,8 +75,8 @@
             $.mobile.changePage( "index1.html", { transition: "slide", reverse: true } );
         } );
 		*/
-		$("#cont1").on( 'swiperight', function() {
-            $.mobile.changePage( "index1.html", { transition: "slide", reverse: true } );
+		$("#cont").on( 'swiperight', function() {
+            $.mobile.changePage( "index.html", { transition: "slide", reverse: true } );
         } );
 		
 		
